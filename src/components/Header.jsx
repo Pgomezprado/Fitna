@@ -43,21 +43,6 @@ const Header = () =>{
                 alignItems:'center',
                 alignText:'center'
             }}>
-                <Box sx={{
-                    textAlign:'center',
-                    width:'20rem',
-                    marginBottom:'1rem',
-                    fontFamily:'Monserrat',
-                    marginTop:'1rem'
-                }}>
-                    <Typography>Contact me from the buttom below, I will wihtin 24 hours!</Typography>
-                    <Button  variant='text' sx={{
-                        color:'white',
-                        backgroundColor:'#0D0D0D'
-                    }}>
-                        Contact us
-                    </Button>
-                </Box>
                 <Box sx={{textAlign:'center'}}>
                     <img src={logo} alt='Logo'
                         style={{
