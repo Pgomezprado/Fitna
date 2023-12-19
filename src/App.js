@@ -1,9 +1,14 @@
-import { Navbar } from './components/nav';
 import './App.css';
-import './components/navbar.css'
+import Header from './components/Header';
+import ResponsiveAppBar from './components/Navbar';
+
 
 function App() {
   return (
+    <>
+        <ResponsiveAppBar/>
+        <Header />
+    </>
   );
 }
 
