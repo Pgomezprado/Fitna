@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import { Box} from "@mui/material"
-import {Button} from "@mui/material"
 import React from "react";
 import logo from '../assets/logo-removebg-preview.png'
 
@@ -13,7 +12,7 @@ const Header = () =>{
             maxWidth:'100%',
             overflow:'hidden'
         }}>
-            <Typography sx={{
+            <Typography align="center" sx={{
                 fontFamily:'Montserrat',
                 fontSize:'3rem',
                 textAlign:'center',
