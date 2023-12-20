@@ -1,6 +1,7 @@
 import React from "react";
 import {Container, Typography, Box,Button} from '@mui/material'
 import MobileApp from '../assets/Daco_3968705.png'
+import CalendarImg from '../assets/pngegg.png'
 
 const Products = () =>{
     return(
@@ -40,10 +41,22 @@ const Products = () =>{
                         borderRadius:'2rem'
                     }}
                     />
-                    <Typography sx={{width:'15rem', color:'white'}}> First Product</Typography>
-                    <Button>
-                        Get!
-                    </Button>
+                    <Typography sx={{width:'15rem', color:'white'}}>Personalización sin límites</Typography>
+                </Box>
+                <Box sx={{
+                    transition:'0.3s',
+                    '&:hover':{
+                        transform:'scale(1.05)'
+                    }
+                }}>
+                    <img src={CalendarImg} alt="Pic Personal" 
+                    style={{
+                        width:'15rem',
+                        height:'auto',
+                        borderRadius:'2rem'
+                    }}
+                    />
+                    <Typography sx={{width:'15rem', color:'white'}}> Seguimiento en tiempo real</Typography>
                 </Box>
                 <Box sx={{
                     transition:'0.3s',
@@ -58,28 +71,7 @@ const Products = () =>{
                         borderRadius:'2rem'
                     }}
                     />
-                    <Typography sx={{width:'15rem', color:'white'}}> Second Product</Typography>
-                    <Button>
-                        Get!
-                    </Button>
-                </Box>
-                <Box sx={{
-                    transition:'0.3s',
-                    '&:hover':{
-                        transform:'scale(1.05)'
-                    }
-                }}>
-                    <img src={MobileApp} alt="Pic Personal" 
-                    style={{
-                        width:'15rem',
-                        height:'auto',
-                        borderRadius:'2rem'
-                    }}
-                    />
-                    <Typography sx={{width:'15rem', color:'white'}}> Next Product</Typography>
-                    <Button>
-                        Get!
-                    </Button>
+                    <Typography sx={{width:'15rem', color:'white'}}> Variedad y versatilidad</Typography>
                 </Box>
             </Box>
         </Container>

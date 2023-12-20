@@ -9,10 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
-const pages = ['Fitna', 'Que es Fitna', 'Quienes Somos', 'Contacto'];
+const pages = ['Fitna', '¿Que es Fitna?', 'Servicios'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,10 +47,8 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
+              letterSpacing: '3rem',
               textDecoration: 'none',
             }}
           >
@@ -59,12 +56,11 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
-              size="large"
+              size="medium"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <MenuIcon />
             </IconButton>
@@ -93,7 +89,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <FitnessCenterIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -103,14 +99,13 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            FITNA
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -123,13 +118,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
-          <Box sx={{flexGrow: 0,}}>
-                <Button variant='contained' sx={{
-                    backgroundColor:'white',
-                    color:'#0D0D0D'
-                }}>Login</Button>
-          </Box>
+                <Button variant='contained'>Login</Button>
         </Toolbar>
       </Container>
     </AppBar>

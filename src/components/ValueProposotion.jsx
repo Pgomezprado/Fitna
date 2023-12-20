@@ -3,13 +3,12 @@ import { Box, Typography } from "@mui/material";
 
 const ValueProposotion = () =>{
     return(
-        <Box sx={{marginTop:'3rem',textAlign:'center',marginBottom:'2rem'}}>
+        <Box sx={{textAlign:'center'}}>
             <Typography sx={{
                 fontSize:'3rem',
                 fontWeight:'bold',
+                fontStyle:'italic',
                 color:'#FFFFFF',
-                padding:'0.5rem 1rem',
-                borderRadius:'10px',
                 '@media (max-width):442px':{
                     fontSize:'2rem'
                 }
@@ -18,7 +17,6 @@ const ValueProposotion = () =>{
             </Typography>
 
             <Box sx={{
-                marginTop:'1rem',
                 backgroundColor:'black',
                 padding:'2rem',
                 borderRadius:'10px',
