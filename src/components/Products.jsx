@@ -1,21 +1,18 @@
 import React from "react";
 import {Container, Typography, Box,Button} from '@mui/material'
-import MobileApp from '../assets/Daco_3968705.png'
-import CalendarImg from '../assets/pngegg.png'
+import PlannerPic from '../assets/planner.png'
+import CashPic from '../assets/Cash.png'
 
 const Products = () =>{
     return(
         <Container>
-            <Typography sx={{
-                fontSize:'3rem',
-                textAlign:'center',
-                marginBottom:'2rem',
+            <Typography fontStyle={'italic'} fontSize={'3rem'} textAlign={'center'} marginTop='2rem' fontWeight='bold'sx={{
                 color:'white',
                 '@media (max-width:442px)':{
                     fontSize:'1.rem',
                 }
             }}>
-                Our Products
+            Servicios
             </Typography>
 
             <Box sx={{
@@ -34,14 +31,14 @@ const Products = () =>{
                         transform:'scale(1.05)'
                     }
                 }}>
-                    <img src={MobileApp} alt="Pic Personal" 
+                    <img src={PlannerPic} alt="Pic Personal" 
                     style={{
                         width:'15rem',
                         height:'auto',
                         borderRadius:'2rem'
                     }}
                     />
-                    <Typography sx={{width:'15rem', color:'white'}}>Personalización sin límites</Typography>
+                    <Typography sx={{width:'15rem', color:'white'}}>Planificación de entrenamiento</Typography>
                 </Box>
                 <Box sx={{
                     transition:'0.3s',
@@ -49,29 +46,14 @@ const Products = () =>{
                         transform:'scale(1.05)'
                     }
                 }}>
-                    <img src={CalendarImg} alt="Pic Personal" 
+                    <img src={CashPic} alt="Pic Personal" 
                     style={{
                         width:'15rem',
                         height:'auto',
                         borderRadius:'2rem'
                     }}
                     />
-                    <Typography sx={{width:'15rem', color:'white'}}> Seguimiento en tiempo real</Typography>
-                </Box>
-                <Box sx={{
-                    transition:'0.3s',
-                    '&:hover':{
-                        transform:'scale(1.05)'
-                    }
-                }}>
-                    <img src={MobileApp} alt="Pic Personal" 
-                    style={{
-                        width:'15rem',
-                        height:'auto',
-                        borderRadius:'2rem'
-                    }}
-                    />
-                    <Typography sx={{width:'15rem', color:'white'}}> Variedad y versatilidad</Typography>
+                    <Typography sx={{width:'15rem', color:'white'}}>Modulo de cobros</Typography>
                 </Box>
             </Box>
         </Container>
